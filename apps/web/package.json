@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,7 +13,8 @@
   },
   "dependencies": {
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "@crash/shared": "*"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",
